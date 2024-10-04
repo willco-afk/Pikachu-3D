@@ -1,0 +1,10 @@
+# Ignore everything in the home directory
+../../*
+
+# Allow your project folder files
+!index.html
+!screenshots/
+!myenv/
+
+# Ignore Python virtual environments
+myenv/

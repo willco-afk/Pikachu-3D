@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D VR Pikachu Environment</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0; /* Light background for visibility */
+        }
+        .instruction-box {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .screenshot {
+            max-width: 50%; /* Make screenshots 50% smaller */
+            border-radius: 10px;
+        }
+        .screenshot-box {
+            background: #e0e0e0; /* Light grey background for each box */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .details {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background: #fff; /* White background for details */
+        }
+    </style>
+    <script>
+        function toggleReadme() {
+            const readme = document.getElementById('readme');
+            readme.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-8 rounded-lg shadow-lg text-white">
+        <h1 class="text-3xl font-bold mb-4">Navigate Your 3D VR Experience</h1>
+        <p class="mb-2">Unlock the full potential of this interactive environment powered by Django and Python. Here’s how to get the most out of it:</p>
+        <ol class="list-decimal list-inside space-y-2">
+            <li class="hover:text-blue-300 transition duration-200">Use the zoom in and out buttons to adjust your view effortlessly.</li>
+            <li class="hover:text-blue-300 transition duration-200">Navigate seamlessly with the directional buttons for an immersive experience.</li>
+            <li class="hover:text-blue-300 transition duration-200">Refer to the documentation for detailed guidance on features.</li>
+        </ol>
+        <div class="mt-4">
+            <p class="text-sm">Built with A-Frame, Three.js, Python, and Django server for added functions.</p>
+            <p class="text-sm">This setup is ideal for exploring complex 3D animations!</p>
+        </div>
+    </div>
+</body>
+<div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center p-6 rounded-lg shadow-lg mt-6">
+    <h2 class="text-3xl font-bold mb-2">Screenshots</h2>
+    <p class="text-lg">Check out the visuals my most recentproject and see how the 3D environment looks in action!</p>
+</div>
+
+        <!-- Screenshot 1 -->
+        <div class="screenshot-box">
+            <img src="screenshots/screenshot2.png" alt="Screenshot 1" class="screenshot" onerror="this.onerror=null; this.src='screenshots/placeholder.png';">
+            <div class="details">
+                <h3>Phase 1</h3>
+                <p>In this screenshot, we see a breathtaking view of a gigantic, planet-sized Pikachu from the side, showcasing the intricate details of its design in a vibrant 3D environment. The perspective invites the viewer to look up at this massive character, emphasizing the scale and immersion of the experience. This moment reflects the culmination of many lessons learned throughout the project.
+
+We began this journey with a desire to integrate a 3D model into our Django application, navigating challenges like missing textures and performance issues. The installation of directional buttons added interactivity, allowing users to explore the environment more dynamically. While some pixels are missing, this small imperfection highlights the continuous learning process, showcasing the progress made in mastering tools like Blender for model manipulation and Django for backend functionality.
+
+From the struggles of setting up the project environment to the satisfaction of seeing our hard work pay off, this screenshot embodies the creativity, perseverance, and problem-solving skills developed along the way. The project was a testament to the power of combining various tech stacks, including HTML, CSS, JavaScript, and Django, illustrating how we transformed challenges into opportunities for growth.
+
+This snapshot is not just a view of a virtual Pikachu; it represents the journey from concept to reality, with each pixel telling a story of dedication and innovation.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 2 -->
+        <div class="screenshot-box">
+            <img src="screenshots/screenshot3.png" alt="Screenshot 2" class="screenshot" onerror="this.onerror=null; this.src='screenshots/placeholder.png';">
+            <div class="details">
+                <h3>Phase 2</h3>
+                <p>### Screenshot 2 Summary
+
+This screenshot offers an incredible view from inside the planet-sized Pikachu, showcasing the character's internal structure while simultaneously highlighting the immersive, VR-friendly environment we've created. As we look up at the vibrant colors and textures, the experience is nothing short of enchanting.
+
+Throughout this phase of development, I navigated numerous challenges, especially regarding the appearance and scale of the navigation app within the 3D world. Learning how to manipulate the UI elements effectively was crucial, as I aimed to create an intuitive user experience while maintaining the grandeur of the Pikachu model. Each adjustment taught me valuable lessons in balancing aesthetics with functionality.
+
+One significant hurdle was managing the complexity of the terrain. As the scale of the environment increased, so did the risk of performance issues. I learned that adding too much terrain to a planet-sized model could lead to lag and visual glitches, forcing me to rethink my design approach. This lesson underscored the importance of optimization in 3D environments, prompting me to refine my models and streamline the assets for better performance.
+
+Another major challenge was the limitations of free hosting services. Many of these platforms couldn't handle the graphic intensity of my scene, leaving me with few options. The only reliable ways to showcase this impressive model were through my local Django server or sometimes a Python server. This experience taught me the importance of understanding hosting capabilities and the resources needed to run complex 3D applications effectively.
+
+This moment captures the essence of my journey: transforming challenges into opportunities for growth and understanding the intricacies of 3D modeling and web development. The combination of tools like Blender for crafting the model and Django for managing the backend made this project a true learning experience. It was not just about building a massive Pikachu; it was about mastering the process and the technology behind it, paving the way for future projects while ensuring the experience is VR-friendly.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 3 -->
+        <div class="screenshot-box">
+            <img src="screenshots/screenshot4.png" alt="Screenshot 3" class="screenshot" onerror="this.onerror=null; this.src='screenshots/placeholder.png';">
+            <div class="details">
+                <h3>Phase 3</h3>
+                <p>### Screenshot 3 Summary
+
+In this screenshot, we zoom out to appreciate the vastness of the planet-sized Pikachu model, showcasing the critical lessons learned about camera control within the Three.js framework. This perspective not only highlights the size of the Pikachu but also emphasizes the importance of sustainable design in 3D environments.
+
+As I adjusted the camera settings, I discovered the intricacies of achieving smooth navigation and optimal viewing angles. This phase of development reinforced my understanding of how essential camera control is for user experience, enabling users to appreciate the grandeur of the model without feeling disoriented. I realized that a well-implemented camera system significantly enhances the overall immersion of the experience.
+
+Through this process, I learned valuable lessons regarding image sizes and performance. Maintaining a balance between high-quality graphics and efficient loading times became a priority. I found that larger image files could slow down performance, so I focused on optimizing textures to ensure the application ran smoothly. This experience highlighted the importance of sustainable practices in web development, ensuring that even visually stunning designs do not compromise performance.
+
+I was eager to share this breathtaking creation with the world, but I learned the hard way that simplicity often yields the best results. After experimenting with various backgrounds, I discovered that a black background enhanced the vibrant colors of the Pikachu model, creating a striking contrast that made the 3D environment pop. This minimalistic approach taught me the value of clear design choices and the impact they have on the user experience.
+
+However, the integration of Django forms posed significant challenges, as adding them to the scene often resulted in crashes. This experience was frustrating but ultimately served as a lesson in understanding the limitations of my setup. By focusing on the visual aspects without overcomplicating the structure, I was able to create a more stable environment that showcased the Pikachu model effectively.
+
+This screenshot captures the essence of the balance between creativity and technical feasibility, emphasizing the need for thoughtful design decisions while reinforcing my commitment to sharing an incredible, immersive experience with the world.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 4 -->
+        <div class="screenshot-box">
+            <img src="screenshots/screenshot5.png" alt="Screenshot 4" class="screenshot" onerror="this.onerror=null; this.src='screenshots/placeholder.png';">
+            <div class="details">
+                <h3>Phase 4</h3>
+                <p>### Screenshot 4 Summary
+
+In this screenshot, we see the Pikachu model presented in a more manageable size, perfectly framed on the screen. This moment marks a pivotal transition in my development journey, where I encountered limitations with Sketchfab, the online hosting site that restricted my ability to effectively resize the model. The struggle to optimize the model's dimensions became a frustrating time sink, impeding my overall progress.
+
+While the user interface was functional, it felt clunky and unsatisfactory. I quickly realized that the constraints of the platform were hindering my creative expression, compelling me to seek a more powerful tool to bring my vision to life. This limitation ultimately led me to explore new avenues for modeling and rendering.
+
+Recognizing the need for greater flexibility, I decided to download Blender, a robust 3D modeling application that provided far more control over my designs. The learning curve was steep, but I was determined to master it. With Blender, I discovered the ability to resize and manipulate the Pikachu model to fit my specific needs, overcoming the frustrations I faced on Sketchfab. 
+
+This experience reinforced the importance of choosing the right tools for the job, as I felt empowered to create more complex and refined designs. With Blender, I could customize the model's scale and detail without being limited by the constraints of online platforms. This transition marked a significant step in my journey, illustrating the ongoing battle against obstacles and the determination to enhance my skills. It served as a reminder that sometimes, embracing new technologies is the key to unlocking creative potential and achieving a more polished final product.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 5 -->
+        <div class="screenshot-box">
+            <img src="screenshots/screenshot6.png" alt="Screenshot 5" class="screenshot" onerror="this.onerror=null; this.src='screenshots/placeholder.png';">
+            <div class="details">
+                <h3>Phase 5</h3>
+                <p>### Screenshot 5 Summary
+
+In this screenshot, the Pikachu model is displayed in a different position, front-facing, which allows us to appreciate its details more clearly. This view also highlights the challenge I faced with pixelation; I noted that all of its pixels were now visible, which sparked curiosity but also frustration as I struggled to manage these visual artifacts.
+
+The experience on Sketchfab was fraught with bugs and challenges. I encountered numerous stack issues that made file management tedious and complicated. Keeping track of multiple versions of my models and ensuring the correct files were in the appropriate folders became a significant hurdle. I learned the hard way how essential proper organization is in any development process, especially when dealing with 3D models.
+
+As I navigated through various file types and formats, I also delved into lessons surrounding Python files (.py) and how they interacted with my project. Each issue presented an opportunity for growth; I became more adept at troubleshooting and understanding the backend processes that drive my application. I learned to scrutinize error messages and to identify where things went wrong in my code or file structure.
+
+This screenshot serves as a reminder of the obstacles I faced while using Sketchfab and the perseverance required to overcome them. It encapsulates my journey through the complexities of 3D modeling and web integration, emphasizing the importance of resilience and the willingness to learn from each setback. Despite the bugs and challenges, I continued to refine my skills, motivated by the goal of creating a seamless experience for my users.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 6 -->
+        <div class="screenshot-box">
+            <img src="screenshots/screenshot7.png" alt="Screenshot 6" class="screenshot" onerror="this.onerror=null; this.src='screenshots/placeholder.png';">
+            <div class="details">
+                <h3>Phase 6</h3>
+                <p>### Screenshot 6 Summary
+
+In this screenshot, I'm still grappling with the resizing options for my 3D Pikachu model, feeling utterly frustrated. Despite my efforts to navigate the interface, I couldn't locate any effective tools for sizing or resizing. This limitation proved to be a significant roadblock in my development process, impacting my ability to present the model as intended.
+
+As I explored the platform further, I encountered a 3D model viewer showcasing user interaction with my GLTF object. While it was fascinating to see how the model responded to user inputs, I realized that this feature wasn't aligned with my primary focus. Instead of refining my Pikachu model, I found myself distracted by aspects of the viewer that didn't contribute to my original goals.
+
+This experience underscored the importance of clarity in project objectives. The lessons learned over the past few days had already emphasized the need to stay focused on the core vision, and this moment was a reminder to refocus on my ultimate goals. 
+
+Over the last few days, I had tackled various challenges—learning about the complexities of 3D modeling, dealing with platform limitations, and grappling with coding errors. Each of these experiences added layers to my understanding, but I couldn’t help but feel overwhelmed at times. The struggle to maintain momentum while sorting through these distractions became a valuable lesson in perseverance and clarity of purpose.
+
+As I continued this journey, I became increasingly aware of the need for effective tools and platforms that align with my goals, paving the way for future explorations in 3D modeling and web integration.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 7 -->
+        <div class="screenshot-box">
+            <img src="screenshots/screenshot8.png" alt="Screenshot 7" class="screenshot" onerror="this.onerror=null; this.src='screenshots/placeholder.png';">
+            <div class="details">
+                <h3>Phase 7</h3>
+                <p>### Screenshot 7 Summary
+
+In this screenshot, we see the default building screen in Blender, marking a crucial turning point in my project journey. As I stared at the blank canvas, I felt both excitement and apprehension about diving into this powerful 3D modeling application. The interface was intimidating at first glance, filled with features and tools that I knew would require a significant investment of time and effort to master.
+
+I immediately began by deleting the default square and other objects that cluttered the workspace, eager to create a clean slate for my Pikachu model. This initial act of clearing out unnecessary elements symbolized my commitment to focus solely on what mattered—crafting the perfect representation of my vision.
+
+As I navigated through Blender’s features, I encountered a steep learning curve. I was determined to overcome any challenges that lay ahead, knowing that mastering this tool was essential to achieving my goals. The lessons I had learned from previous experiences, including the importance of patience and persistence, resonated strongly as I prepared to tackle the intricacies of Blender.
+
+I reminded myself that this process would not only involve creating a stunning 3D model but also refining my skills and expanding my knowledge of the 3D design landscape. Embracing the challenges that came with using Blender, I felt a renewed sense of purpose and determination to harness its capabilities fully. This screenshot captures the moment before the real work began—an exciting leap into the unknown, where every challenge would contribute to my growth as a developer and creator.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 8 -->
+        <div class="screenshot-box">
+            <img src="screenshots/screenshot9.png" alt="Screenshot 8" class="screenshot" onerror="this.onerror=null; this.src='screenshots/placeholder.png';">
+            <div class="details">
+                <h3>Phase 8</h3>
+                <p>### Screenshot 8 Summary
+
+In this screenshot, we delve into Blender's intricate interface, showcasing the X, Y, and Z options that I utilized to resize my GLTF model. The complexity of the application was both awe-inspiring and daunting, with a multitude of tools and features at my fingertips. As I worked diligently, I faced a moment of panic when a piece of the Pikachu model appeared to fall off during my adjustments. 
+
+Initially, I was distracted by this perceived loss, but I quickly reminded myself to remain focused and not let frustration derail my progress. After a thorough inspection, I determined that nothing was actually missing; it was merely a visual quirk of the environment. This revelation emphasized the importance of maintaining a clear head and trusting the tools at my disposal.
+
+The real-time ID names within the Blender environment provided clarity and insight into the model's structure, reassuring me that my 3D image was indeed intact. This experience highlighted the learning curve of working with such a sophisticated application—Blender is undeniably not a toy, but rather a powerful tool for serious creators. 
+
+Navigating through these complexities taught me valuable lessons about precision, patience, and problem-solving in the world of 3D modeling. Each challenge I faced reinforced my determination to master Blender and harness its capabilities to bring my vision to life, proving that perseverance is key when tackling advanced software..</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 9 -->
+        <div class="screenshot-box">
+            <img src="screenshots/screenshot10.png" alt="Screenshot 9" class="screenshot" onerror="this.onerror=null; this.src='screenshots/placeholder.png';">
+            <div class="details">
+                <h3>Phase 9</h3>
+                <p>### Final Screenshot Summary
+
+In this final screenshot, we witness a beautifully controlled static starting position of the Pikachu Gigapet 3D environment, set against a deep black sky that enhances the visual impact of the model. The custom UI buttons I've designed for faster and more strategic navigation stand out prominently, showcasing the culmination of my efforts in creating a user-friendly experience. This moment represents not only the pinnacle of my creative journey but also the evolution of my understanding of 3D environments.
+
+As I reached this stage, I felt a profound realization about the importance of sharing knowledge rather than hoarding it. Breaking apart my index.html into this guide was a significant step; I wanted others to learn from my journey and explore the intricacies of 3D modeling and web development. Although I couldn’t showcase the experience live due to server load issues, the desire to share my findings fueled my determination.
+
+This screenshot also marked the near end of my path toward integrating back-end and front-end development. I understood that hosting my page2.html as a Django project would allow me to solidify my learning while navigating the complexities of web technologies. Meanwhile, this index.html page serves as a comprehensive guide for anyone interested in exploring what I accomplished and learned along the way.
+
+As you read this guide, I hope you find inspiration and practical insights that empower you, regardless of your experience level—whether you're a seasoned developer, a newcomer to the field, or simply someone curious about 3D modeling. Enjoy exploring the work I’ve done and the lessons I’ve learned, and remember that sharing knowledge enriches the entire community.</p>
+            </div>
+        </div>
+
+<!-- README Section -->
+<div class="mt-4">
+    <button onclick="toggleReadme()" class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg focus:outline-none">
+        Toggle README
+    </button>
+<body>
+    <div id="readme" class="hidden mt-2 p-4 bg-white rounded-lg shadow-md">
+        <h2 class="text-lg font-semibold">README</h2>
+        <p>This project was created using Django and features an engaging 3D environment. While running successfully on the Django server, challenges arose when attempting to host on a standard Python server, primarily due to the large size of the 3D model. Managing Django files can be complex, so be prepared for some trial and error!</p>
+        
+        <h3>Stages of Learning</h3>
+        <p class="mb-2">Here’s a quick overview of what I learned during this project:</p>
+        <ol class="list-decimal pl-6 mb-4">
+            <li class="mb-2">Exploring the basics of Django and setting up a virtual environment.</li>
+            <li class="mb-2">Creating models and views to handle data efficiently.</li>
+            <li class="mb-2">Integrating 3D models using GLTF files and troubleshooting compatibility issues.</li>
+            <li class="mb-2">Navigating the complexities of managing `.py` files and understanding project structure.</li>
+        </ol>
+        
+        <h3>Explore Your 3D VR Experience!</h3>
+        <p class="mb-2">Ready to dive in? Here’s how you can get started:</p>
+        <ol class="list-decimal pl-6 mb-4">
+            <li class="mb-2">Feel free to clone a similar project or create your own from scratch! Explore and figure it out—there’s a lot to learn!</li>
+            <li class="mb-2">Ensure you have the necessary dependencies installed. Use the command below to get started:</li>
+            <code class="block p-2 bg-gray-200 rounded">pip install -r requirements.txt</code>
+            <li class="mb-2">To run the backend with Django, start your server with:</li>
+            <code class="block p-2 bg-gray-200 rounded">python manage.py runserver</code>
+            <li class="mb-2">Open your browser and navigate to <a href="http://127.0.0.1:8000" class="text-blue-500 underline">http://127.0.0.1:8000</a> to view the project.</li>
+            <li class="mb-2">Don’t forget to include the GLTF files to view the 3D models! You can find them at the following source:</li>
+            <p class="mb-2">• 3D Model by <a href="https://sketchfab.com/wikiti" class="text-blue-500 underline">wikiti from Sketchfab</a>, used under <a href="https://creativecommons.org/licenses/by/4.0/" class="text-blue-500 underline">CC BY 4.0</a>.</p>
+            <li class="mb-2">Follow the instructions provided in the application for further usage.</li>
+        </ol>
+        <p>If you encounter issues, please check your environment settings and ensure all files are correctly placed as per the directory structure.</p>
+        
+        <h3>For Your LinkedIn Post:</h3>
+        <p>When you share the link to your project on LinkedIn, you can include the credit in the post itself:</p>
+        <p class="mb-2">CREDIT TO: featuring a 3D model by <a href="https://sketchfab.com/wikiti" class="text-blue-500 underline">wikiti from Sketchfab</a>, used under <a href="https://creativecommons.org/licenses/by/4.0/" class="text-blue-500 underline">CC BY 4.0</a>.</p>
+        <p>Model Link: <a href="https://sketchfab.com/3d-models/game-boy-color-03c6fe28d45244d2acd55486e3cfee19" class="text-blue-500 underline">Game Boy Color 3D Model</a></p>
+    </div>
+</body>
+</div>
+
+<div class="mt-4">
+    <button onclick="toggleUIStyles()" class="w-full py-2 px-4 bg-green-600 text-white rounded-lg focus:outline-none">
+        Toggle UI Styles Explanation
+    </button>
+    <div id="uiStyles" class="hidden mt-2 p-4 bg-white rounded-lg shadow-md max-h-96 overflow-y-auto">
+        <h3>UI Styles Explanation</h3>
+        <div class="details">
+            <p>The following CSS styles are used to create a user interface (UI) for controlling the 3D environment:</p>
+            <ul>
+                <li><strong>.ui-container</strong>: This class positions the UI container at the bottom left of the screen with a higher stacking order.</li>
+                <li><strong>.controls-box</strong>: A central control box for buttons, positioned at the bottom center of the screen with a semi-transparent background and glowing effects.</li>
+                <li><strong>.control-button</strong>: Styles for individual buttons, including padding, color, hover effects, and transitions for a responsive feel.</li>
+                <li><strong>Button Colors:</strong> Each button has a unique color representing Pikachu's neon theme (e.g., yellow for zoom in, orange for zoom out, etc.).</li>
+                <li><strong>.neon-button</strong>: A special button style with a neon glow effect, designed for prominent UI interactions.</li>
+            </ul>
+            <p>These styles ensure that the buttons are visually appealing and easy to interact with, enhancing user experience.</p>
+        </div>
+        <h4>Sample Custom Code:</h4>
+        <pre>
+            <code>
+/* Basic styles for the UI */
+.ui-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.controls-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 0, 0.5);
+}
+
+.control-button {
+    margin: 5px;
+    padding: 12px 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    opacity: 0.8; /* Increased opacity for better visibility */
+}
+
+.control-button:hover {
+    transform: scale(1.1);
+}
+
+/* Button colors representing Pikachu's neon theme */
+.button-zoom-in { background-color: #FFD700; } /* Neon Yellow */
+.button-zoom-out { background-color: #FF6347; } /* Neon Orange */
+.button-up { background-color: #FF4500; } /* Neon Red */
+.button-down { background-color: #32CD32; } /* Neon Lime Green */
+.button-left { background-color: #00BFFF; } /* Neon Deep Sky Blue */
+.button-right { background-color: #FF1493; } /* Neon Deep Pink */
+
+.neon-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 5px #fff, 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    transition: all 0.3s ease;
+}
+            </code>
+        </pre>
+    </div>
+</div>
+
+<div style="position: fixed; bottom: 20px; left: 20px; z-index: 100;">
+    <a href="https://willco-projects.netlify.app" target="_blank" 
+       style="display: inline-block; padding: 15px 30px; background-color: yellow; color: black; 
+              text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold;">
+        Visit My Projects
+    </a>
+</div>
+
+<script>
+    function toggleReadme() {
+        const readme = document.getElementById('readme');
+        readme.classList.toggle('hidden');
+    }
+
+    function toggleUIStyles() {
+        const uiStyles = document.getElementById('uiStyles');
+        uiStyles.classList.toggle('hidden');
+    }
+</script>
+</script>
+    </div>
+</body>
+</html>
